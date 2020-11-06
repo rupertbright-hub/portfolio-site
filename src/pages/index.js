@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Header, About, Contact, Projects } from '../components'
+import { About, Contact, Projects, Landing } from '../components'
 
 
 import Layout from "../components/layout"
@@ -10,7 +10,7 @@ const IndexPage = () => (
     
   <Layout>
     <SEO title="Home" />
-    <Header/>
+    <Landing/>
     <About/>
     <Contact/>
     <Projects/>

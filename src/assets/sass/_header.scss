@@ -1,6 +1,7 @@
 @import './_variables.scss';
 
+
 .header-container {
-    width: 100%;
-    height: 100vh;
+    background-color: $base-color;
+    max-width:100%;
 }
