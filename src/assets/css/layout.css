@@ -1,18 +1,31 @@
 .about-container {
   height: 100vh;
+  padding-top: 50px;
 }
 
-.container {
-  background-color: red;
-}
-
-.container div {
-  display: flex;
-  justify-content: center;
+.header-container {
+  width: 100%;
+  height: 100vh;
 }
 
 .contact-container {
   height: 100vh;
+  padding-top: 50px;
+}
+
+.loading-container {
+  background-color: darkgreen;
+  height: 100vh;
+}
+
+.navlinks-container {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navlinks-container div {
+  padding: 20px;
 }
 
 html {
@@ -688,4 +701,10 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.layout-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100vw;
 }

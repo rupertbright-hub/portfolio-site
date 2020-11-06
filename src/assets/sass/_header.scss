@@ -1,8 +1,6 @@
-.container {
-    background-color: red;
+@import './_variables.scss';
 
-    div {
-        display:flex;
-        justify-content: center;
-    }
+.header-container {
+    width: 100%;
+    height: 100vh;
 }
