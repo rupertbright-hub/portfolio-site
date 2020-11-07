@@ -3,8 +3,10 @@ import React from 'react'
 
 function About() {
     return (
+        <div className='about-section'>
         <div id='about' className='section-container'>
         <h1 className='hello'>About</h1>
+        </div>
         </div>
     )
 }

@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,700;0,800;0,900;1,200;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,700;0,800;0,900;1,200;1,400&display=swap");
+.about-section {
+  background-color: red;
+}
+
 .header-container {
   background-color: white;
   max-width: 100%;
   opacity: 0.9;
-  padding: 0px 200px;
+  padding: 0px 100px;
 }
 
 .contact-container {
@@ -33,6 +37,10 @@
 
 .rb-description span {
   color: red;
+}
+
+.rb-description p {
+  width: 60%;
 }
 
 .fixed-left {
@@ -96,8 +104,9 @@
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 80px;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 p {
