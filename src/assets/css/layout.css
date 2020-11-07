@@ -1,11 +1,10 @@
-.about-container {
-  height: 100vh;
-  padding: 100px 150px;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,700;0,800;0,900;1,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,700;0,800;0,900;1,200;1,400&display=swap");
 .header-container {
   background-color: white;
   max-width: 100%;
+  opacity: 0.9;
+  padding: 0px 200px;
 }
 
 .contact-container {
@@ -28,13 +27,50 @@
   padding: 20px;
 }
 
-.projects-container {
-  height: 100vh;
-  padding: 100px 150px;
+.description-container {
+  display: flex;
 }
 
-.landing-container {
-  height: 100vh;
+.rb-description span {
+  color: red;
+}
+
+.fixed-left {
+  position: fixed;
+  bottom: 0px;
+  left: 50px;
+  display: block;
+}
+
+.fixed-right {
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+}
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+
+.headroom--scrolled {
+  transition: transform 800ms ease-in-out;
+}
+
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-250%);
+}
+
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
 }
 
 * {
@@ -43,5 +79,30 @@
 }
 
 .layout-container {
-  width: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout-container {
+    padding: 0px 10px;
+    margin: 0px 10px;
+  }
+}
+
+.section-container {
+  padding: 100px 200px;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 20px;
 }
