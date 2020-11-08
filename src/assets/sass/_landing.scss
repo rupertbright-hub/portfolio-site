@@ -2,12 +2,17 @@
      display:flex;
 }
 
+.landing-container {
+    height:100vh;
+}
+
 .rb-description {
     span {
-        color: red;  
+        color: $header-color;  
     }
     p {
         width:60%;
+        color:$text-color;
     }
 }
 
@@ -23,29 +28,3 @@
       bottom: 0px;
       right: 50px;
     }
-
-.headroom {
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.headroom--unfixed {
-  position: relative;
-//   margin-right:16px;
-  transform: translateY(0);
-}
-
-
-.headroom--scrolled {
-  transition: transform 800ms ease-in-out;
-}
-.headroom--unpinned {
-  position: fixed;
-//   margin-right:98px;
-  transform: translateY(-250%);
-}
-.headroom--pinned {
-  position: fixed;
-  transform: translateY(0%);
-//   margin-right:98px;
-}

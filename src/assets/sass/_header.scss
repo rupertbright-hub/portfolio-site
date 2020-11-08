@@ -7,3 +7,28 @@
     opacity: 0.9;
     padding:0px 100px;
 }
+
+.headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .headroom--unfixed {
+    position: relative;
+  //   margin-right:16px;
+    transform: translateY(0);
+  }
+  
+  
+  .headroom--scrolled {
+    transition: transform 800ms ease-in-out;
+  }
+  .headroom--unpinned {
+    position: fixed;
+  //   margin-right:98px;
+    transform: translateY(-250%);
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
+  }
