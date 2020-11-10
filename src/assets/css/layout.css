@@ -89,6 +89,10 @@
   height: 100vh;
 }
 
+.rb-description {
+  padding: 100px 100px;
+}
+
 .rb-description span {
   color: #d6bcfa;
 }
@@ -138,7 +142,7 @@ h1 {
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 20px;
 }
 

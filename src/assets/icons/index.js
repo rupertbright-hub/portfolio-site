@@ -1,0 +1,6 @@
+export { default as LinkedIn } from './linkedin.svg'
+export { default as GitHub } from './github.svg'
+export { default as Instagram } from './instagram.svg'
+export { default as Telegram } from './telegram.svg'
+export { default as Line} from './line.svg'
+export { default as Arrow} from './down-arrow.svg'

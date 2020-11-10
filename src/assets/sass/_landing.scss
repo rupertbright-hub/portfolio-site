@@ -1,18 +1,43 @@
-.description-container {
-     display:flex;
-}
 
 .landing-container {
     height:100vh;
+    background-color:$base-color;
+    
+    
+}
+
+.social-icon {
+    :hover {
+        fill: $header-color;
+        transition-property: top; 
+             top: -8px;
+             cursor: pointer;
+             transition-duration: 2000;
+             
+             
+    }
 }
 
 .rb-description {
+    padding:150px 200px;
+    text-align:center;
+    
+   
+
     span {
         color: $header-color;  
+        font-size: 80px;
+    }
+
+    h1 {
+        line-height: 1.2;
+        font-weight: 400;
+
     }
     p {
-        width:60%;
+       
         color:$text-color;
+        line-height: 1.6;
     }
 }
 
@@ -26,5 +51,25 @@
 .fixed-right {
       position: fixed;
       bottom: 0px;
-      right: 50px;
+      right: 90px;
+      text-align:center;
+      margin:auto;
+
+      div {
+          margin-top:20px;
+          display:block;
+          
+      }
+    }
+
+    .arrow-container {
+        display:flex;
+        justify-content:center;
+    }
+
+    .arrow {
+
+        :hover {
+        fill: $header-color;
+        }
     }

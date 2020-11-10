@@ -1,17 +1,27 @@
 import React from 'react'
-import { Fade } from "react-awesome-reveal";
+import Fade from 'react-reveal/Reveal';
+import newprojects from '../../config';
+
+
 
 
 function projects() {
     return (
         <div>
         <h1 id='projects'>Projects</h1>
-        <Fade cascade triggerOnce={true} delay={1000}>
+        <Fade delay={9000} cascade bottom>
         <div className='projects-container'>
-        <div className='project-div'>Zapp</div>
-        <div className='project-div'>CycleFlow</div>
-        <div className='project-div'>Testing</div>
-        <div className='project-div'>Protfolio Site</div>
+    {newprojects.projects.map((project, index) => {
+        return (
+            <div className='project-div'>
+            <h1>{project.name}</h1>
+            <p>{project.description}</p>
+            <ul>
+            {project.techStack.map((tech,index) => 
+                <li>{tech}</li>)}
+                </ul>
+            </div> 
+            )})}
         </div>
         </Fade>
 

@@ -4,8 +4,31 @@
     justify-content: flex-end;
 
     div {
-        padding:20px;
         font-family: $montserrat;
+        padding:30px;
+    }
+
+    a {
         text-decoration: none;
+        padding:20px;
+        color:$text-color;
+    }
+
+    button {
+        padding:0px;
+        width:100px;
+        margin:20px;
+        color:$header-color;
+        background-color: $base-color;
+        border-color:$header-color;
+        border-width: 3px;
+        border-radius:10px;
+        border-style: solid;
+        font-size:15px;
+    }
+
+    button:hover {
+        background-color: $header-color;
+        color:$base-color;
     }
 }

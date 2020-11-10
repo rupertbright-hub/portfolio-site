@@ -1,5 +1,5 @@
 import React from 'react'
-// import "../../src/assets/sass/layout.scss"
+
 
 function About() {
     return (
