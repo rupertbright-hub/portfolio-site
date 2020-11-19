@@ -20,6 +20,7 @@ function landing() {
         <h1><span>Rupert Bright.</span></h1>
         <h1>Frontend Engineer from London.</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam</p>
+    
         </div>
         </Fade>
         </div>

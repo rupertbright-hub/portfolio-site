@@ -9,9 +9,9 @@ function nav_links() {
         
         <div className='navlinks-container'>
         
-            <div><AnchorLink href='#about'>01. About</AnchorLink></div>
-            <div><AnchorLink href='#projects'>03. Projects</AnchorLink></div>
-            <div><AnchorLink href='#contact'>02. Contact</AnchorLink></div>
+            <div><AnchorLink href='#about'><span>01.</span> About</AnchorLink></div>
+            <div><AnchorLink href='#projects'><span>03.</span> Projects</AnchorLink></div>
+            <div><AnchorLink href='#contact'><span>02.</span> Contact</AnchorLink></div>
             <button>CV</button>
     </div>
     </Fade>

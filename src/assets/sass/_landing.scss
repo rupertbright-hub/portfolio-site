@@ -1,25 +1,20 @@
-
-.landing-container {
-    height:100vh;
-    background-color:$base-color;
-    
+  .landing-container {
+    height:90vh;
     
 }
 
 .social-icon {
     :hover {
         fill: $header-color;
-        transition-property: top; 
-             top: -8px;
              cursor: pointer;
-             transition-duration: 2000;
+        
              
              
     }
 }
 
 .rb-description {
-    padding:150px 200px;
+    padding:100px 200px;
     text-align:center;
     
    
@@ -38,6 +33,9 @@
        
         color:$text-color;
         line-height: 1.6;
+        width:60%;
+        margin:auto;
+        margin-top:40px;
     }
 }
 

@@ -1,3 +1,58 @@
+@import './_variables.scss';
+
 .about-section {
-    height: 100vh;
+    padding-top:100px;
+    width:70%;
+    margin:auto;
+
+
+    h1 {
+        background-color: $base-color;
+        color:$header-color;
+        padding:10px;
+        font-family: $written;
+        letter-spacing: 3px;
+        width:200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align:center;
+        padding:10px;
+        font-size: xx-large;
+        border-color:$header-color;
+        border-width: 1px;
+        border-style: solid;
+
+    }
+
+    .about-description {
+        display:flex;
+        justify-content: center;
+       border-top: 1px solid $header-color;
+        width:100%;
+        margin:auto;
+        padding:10%;
+    }
+
+    .left-container {
+        width: 50%;
+
+        p{
+            color:$text-color;
+        }
+    }
+
+    .right-container {
+        width:50%;
+        margin-left:20px;
+    }
+
+
+
+    img {
+        width:100%;
+        
+       
+        
+    }
+
 }

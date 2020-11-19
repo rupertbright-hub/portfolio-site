@@ -1,21 +1,67 @@
-.projects-container {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    width:100%;
-    margin-top:20px;
-}
+@import './_variables.scss';
 
-.project-div {
-        width:36%;
-        height:300px;
-        background-color: rgb(220, 220, 220);
-        margin:9px;
-        border-radius: 10px;
-        
-      
-        @media only screen and (max-width: 1260px) {
+.projects-section {
+    margin-top: 300px;
 
-            width:100%;
+    
+
+    h1 {
+        letter-spacing: 5px;
+        color:$base-color;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    p {
+        font-size: large;
     }
 }
+
+.projects-container {
+    flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+    background-color: $text-color;
+    padding:10px;
+    border-radius: 10px;
+    
+}
+
+.transform {
+    width:25%;
+    }
+
+.project-div {
+        height:450px;
+        background-color: $text-color;
+        margin:9px;
+        border-radius: 10px;
+        display:block;
+        color:$base-color;
+        border:$header-color;
+        border-style: solid;
+        border-width: 3px;
+        padding:20px;
+        position:relative;
+
+        .technology-icons{
+            margin-top:20px;
+            padding: 0px;
+            position: absolute;
+        bottom: 10px;
+
+        img {
+            margin:1px;
+        }
+        }
+
+        &:hover {
+            transform: translate(-3px,-3px);
+            -webkit-box-shadow: 3px 2px 21px 0px rgba(44, 50, 50, 0.54);
+-moz-box-shadow:    3px 2px 21px 0px rgba(44, 50, 50, 0.54);
+box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
+        
+        }
+}
+          
