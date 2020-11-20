@@ -7,10 +7,10 @@
 
 .layout-container {
     max-width: 100%;
-    padding:0px 200px;
+    // padding:0px 200px;
     @media only screen and (max-width: 1260px) {
 
-        padding:0px 100px;
+      
 }
 }
 
@@ -29,6 +29,6 @@ p {
     margin-top:20px;
 }
 
-body {
-    background-color: #1A202C;
-}
+// body {
+//     background-color: #1A202C;
+// }

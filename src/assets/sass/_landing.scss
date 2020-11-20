@@ -1,5 +1,7 @@
   .landing-container {
-    height:90vh;
+    height:97vh;
+    background-color: $base-color;
+    margin: 0px 20px;
     
 }
 
@@ -14,7 +16,7 @@
 }
 
 .rb-description {
-    padding:100px 200px;
+    
     text-align:center;
     
    
@@ -35,7 +37,6 @@
         line-height: 1.6;
         width:60%;
         margin:auto;
-        margin-top:40px;
     }
 }
 

@@ -1,11 +1,13 @@
 import React from 'react'
 import Fade from 'react-reveal/Reveal';
 import {LinkedIn, GitHub, Instagram, Telegram, Line, Arrow} from '../../assets/icons'
+import Header from '../header/header';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function landing() {
     return (
         <div className='landing-container'>
+        <Header/>
         <div>
         <div className='fixed-left'>
             <li>H</li>
