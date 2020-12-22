@@ -3,7 +3,7 @@ import { Contact, About, Landing, Projects} from './sections/index'
 
 function sections() {
     return (
-        <div className='layout-container'>
+        <div className='layout-container'>      
         <Landing/>
         <About/>
         <Projects/>

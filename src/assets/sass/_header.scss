@@ -2,7 +2,7 @@
 
 
 .header-container {
-    background-color: white;
+    background-color: $base-color;
     max-width:100%;
     padding:0px 100px;
 }
@@ -11,21 +11,18 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
   }
   .headroom--unfixed {
     position: relative;
-  //   margin-right:16px;
     transform: translateY(0);
   }
-  
-  
   .headroom--scrolled {
-    transition: transform 300ms ease-in-out;
+    transition: transform 200ms ease-in-out;
   }
   .headroom--unpinned {
     position: fixed;
-  //   margin-right:98px;
-    transform: translateY(-250%);
+    transform: translateY(-100%);
   }
   .headroom--pinned {
     position: fixed;

@@ -1,12 +1,11 @@
 @import './_variables.scss';
 
 .projects-section {
-    margin-top: 300px;
+    background-color: #fff;
 
     
-
     h1 {
-        letter-spacing: 5px;
+        letter-spacing: 3px;
         color:$base-color;
         font-weight: 700;
         font-size: 30px;
@@ -21,27 +20,24 @@
     flex-wrap:wrap;
     display:flex;
     justify-content:center;
-    margin-top:50px;
-    // background-color: $text-color;
-    padding:10px;
+    padding:100px;
     border-radius: 10px;
     
 }
 
 .transform {
-    width:25%;
+    width:600px;
     }
 
 .project-div {
-        height:450px;
-        background-color: $text-color;
+        height:350px;
+        background-color: #F8F8F8;
         margin:9px;
-        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         display:block;
         color:$base-color;
-        border-color:rgb(191, 0, 255);
-        border-style: solid;
-        border-width: 3px;
+        border-top: 2px solid $base-color;
         padding:20px;
         position:relative;
 
@@ -58,10 +54,12 @@
 
         &:hover {
             transform: translate(-4px,-4px);
+            cursor: pointer;
             transition: 0.3s;
             -webkit-box-shadow: 3px 2px 21px 0px rgba(44, 50, 50, 0.54);
 -moz-box-shadow:    3px 2px 21px 0px rgba(44, 50, 50, 0.54);
 box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
+    border-top: 2px solid $accent-color;
         
         }
 }

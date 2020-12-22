@@ -1,42 +1,38 @@
-  .landing-container {
-    height:97vh;
+.container {
+    height:100vh;
     background-color: $base-color;
-    margin: 0px 20px;
-    
 }
 
 .social-icon {
     :hover {
         fill: $header-color;
-             cursor: pointer;
-        
-             
-             
+        cursor: pointer;
     }
 }
 
 .rb-description {
-    
     text-align:center;
-    
+    margin-top: 9%;
+
    
 
     span {
         color: $header-color;  
-        font-size: 80px;
+        font-family: $graf;
+        font-size: 90px;
+        font-weight: 400;
     }
 
     h1 {
         line-height: 1.2;
-        font-weight: 400;
-
+        font-weight: 200;
+        font-size: 30px;
     }
     p {
        
         color:$text-color;
         line-height: 1.6;
-        width:60%;
-        margin:auto;
+        width:30%;
     }
 }
 
@@ -53,6 +49,7 @@
       right: 90px;
       text-align:center;
       margin:auto;
+      z-index: 1;
 
       div {
           margin-top:20px;
@@ -67,6 +64,7 @@
     }
 
     .arrow {
+        margin-top: 60px;
 
         :hover {
         fill: $header-color;

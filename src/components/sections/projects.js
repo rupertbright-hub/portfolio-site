@@ -1,6 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Reveal';
 import newprojects from '../../config';
+import ZappLaptop from './zapp.svg';
+
 
 let technology = newprojects.techicons
 
@@ -18,8 +20,9 @@ function projects() {
         }
         return (
         <div>
-        <h1 id='projects'>Projects</h1>
+        
         <div className='projects-section'>
+        <h1 id='projects' style={{color:'$text-color',textAlign:'center'}}>Projects</h1>
         <Fade delay={2000} cascade bottom>
         <div className='projects-container'>
     {newprojects.projects.map((project, index) => {
@@ -39,6 +42,7 @@ function projects() {
             )})}
         </div>
         </Fade>
+        <img style={{height:'500px'}} src={ZappLaptop}/>
         </div>
         </div>
     )

@@ -1,11 +1,14 @@
 import React from 'react'
-
+import Me from './rupert.jpg'
 
 
 function About() {
     return (
+        <div className='about-container'>
         <div id='about' className='about-section'>
+        <div className='heading'>
         <h1 >01. About</h1>
+        </div>
         <div className='about-description'>
             <div className='left-container'>
                 <p>Hello! I'm Brittany, a software engineer based in Boston, MA.</p>
@@ -14,8 +17,9 @@ function About() {
                 <p>Here are a few technologies I've been working with recently:</p>
             </div>
             <div className='right-container'>
-                <img alt='logo' src={'https://via.placeholder.com/300/09f/fff.png'}></img>
+                <img alt='logo' src={Me}></img>
             </div>
+        </div>
         </div>
         </div>
     )

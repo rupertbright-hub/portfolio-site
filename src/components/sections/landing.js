@@ -6,8 +6,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function landing() {
     return (
+        <div className='container'>
+        <Header/> 
         <div className='landing-container'>
-        <Header/>
         <div>
         <div className='fixed-left'>
             <li>H</li>
@@ -18,10 +19,9 @@ function landing() {
         <div>
         <Fade delay={4000}>
         <div className='rb-description'>
-        <p>Hi <span role='img' aria-label='hand'>👋 </span>, my name is</p>
         <h1><span>Rupert Bright.</span></h1>
         <h1>Frontend Engineer from London.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam</p>
+        <h1>Based in<span style={{color:'rgb(191, 0, 255)'}}> Switzerland.</span></h1>
     
         </div>
         </Fade>
@@ -38,6 +38,7 @@ function landing() {
         <div><Instagram/></div>
         <div><Telegram/></div>
         <div><Line/></div>
+        </div>
         </div>
         </div>
         </div>

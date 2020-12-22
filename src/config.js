@@ -78,5 +78,5 @@ module.exports = {
         Jest: 'https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg',
         Mocha: 'https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg',
         },
-    ]
+    ],
 }
