@@ -1,7 +1,7 @@
 import React from "react"
 
 
-import { Sections, Header } from '../components'
+import { Sections } from '../components'
 
 
 import Layout from "../components/layout"
@@ -11,7 +11,6 @@ const IndexPage = () => (
     
   <Layout>
     <SEO title="Home" />
-    {/* <Header/> */}
     <Sections/>
   </Layout>
 )
