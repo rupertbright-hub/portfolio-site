@@ -2,12 +2,11 @@
 
 .projects-section {
     background-color: #fff;
-
     
     h1 {
         letter-spacing: 3px;
         color:$base-color;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 30px;
     }
 
@@ -22,6 +21,7 @@
     justify-content:center;
     padding:100px;
     border-radius: 10px;
+    margin-top: 100px;
 }
     
 
@@ -36,6 +36,7 @@
 
     .projects-container {
         padding:40px;
+
     }
     }
 
@@ -53,13 +54,21 @@
         height:350px;
         background-color: #F8F8F8;
         margin:9px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
         display:block;
         color:$base-color;
-        border-top: 2px solid $base-color;
-        padding:20px;
+        border-top: 6px solid $base-color;
+        padding:10px 20px;
         position:relative;
+
+        .githubicon {
+            display:flex;
+            width: 100%;
+            
+            div {
+                margin-left: auto;
+              
+            }
+        }
 
         .technology-icons{
             margin-top:20px;
@@ -68,7 +77,8 @@
         bottom: 10px;
 
         img {
-            margin:1px;
+            margin-right:10px;
+  
         }
         }
 
@@ -79,35 +89,74 @@
             -webkit-box-shadow: 3px 2px 21px 0px rgba(44, 50, 50, 0.54);
 -moz-box-shadow:    3px 2px 21px 0px rgba(44, 50, 50, 0.54);
 box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
-    border-top: 2px solid $accent-color;
+    border-top: 6px solid $accent-color;
         
         }
+}
+
+.title {
+    color:$base-color;
+    font-family: $graf;
+    text-align: center;
+    font-size: 90px;
 }
 
 .project-profile {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    padding:20px;
+
+    @media (max-width: 1117px) {
+        display: block;
+        margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    text-align: center;
+    }
+
+    // @media (max-width: 1589px) {
+    //     display: block;
+    // }
+
+   
     
 
 .project-image    {
 
     img {
-        height: 300px;
-        
-    }
+        height: 600px;
 
-    // // @media (max-width: 1000px) {
-    // //     img {
-    // //         height:300px
-    // //     }
+        @media (max-width: 1700px) {
+            height:500px;
+        }
+
+        @media (max-width: $breakpoint-desktop) {
+            height:470px;
+        }
+
+        @media (max-width: 1117px) {
+            height: 420px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
 }
 
-    .project-description {
+    .project-description-right {
         padding: 100px 0;
         width: 500px;
         position: absolute;
         right: 300px;
 
+        @media (max-width: 1700px) {
+            position: static ;
+        }
+        @media (max-width: 1117px) {
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;;
+        }
 
     h1 {
         height: 50px;
@@ -120,7 +169,6 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
         color: $accent-color;
         text-align: right;
         font-size: 20px;
-
     }
 
         p {
@@ -130,9 +178,51 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
             border-radius: 10px;
             text-align: right;
             margin-top:50px;
+            font-size: large;
+            line-height: 1.6;
+
+            @media (max-width: 1700px) {
+                font-size: medium;
+            }
         }
     }
 
+    .project-description-left {
+        padding: 100px 0;
+        width: 500px;
+        position: absolute;
+        left:400px;
 
+        @media (max-width: 1700px) {
+            position: static ;
+        }
+
+    h1 {
+        height: 50px;
+        text-align: left;
+        color: $base-color;
+        padding: 10px;
+    }
+    h2 {
+        color: $accent-color;
+        text-align: left;
+        font-size: 20px;
+    }
+        p {
+            background-color: rgb(26, 32, 44);
+            color: $text-color;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            margin-top:50px;
+            font-size: large;
+            line-height: 1.6;
+
+            @media (max-width: 1700px) {
+                font-size: medium;
+            }
+            
+        }
+    }
 }
           
