@@ -1,15 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Contact, About, Landing, Projects} from './sections/index'
 
-function sections() {
+
+
+function Sections() {
+
+    const [windowSize, setWindowSize] = useState();
+
+useEffect(() => {
+      window.addEventListener("resize", () => {
+        setWindowSize(window.innerWidth);
+      });
+    }, []);
+
+
     return (
         <div className='layout-container'>      
-        <Landing/>
+        <Landing windowSize={windowSize}/>
         <About/>
-        <Projects/>
+        <Projects windowSize={windowSize}/>
         <Contact/>
         </div>
     )
 }
 
-export default sections
+export default Sections

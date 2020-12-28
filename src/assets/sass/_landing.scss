@@ -18,20 +18,24 @@
     span {
         color: $accent-color;  
         font-family: $graf;
-        font-size: 90px;
+        font-size: 10px;
         font-weight: 400;
 
         @media (max-width: $breakpoint-tablet) {
-            font-size: 75px;
+            font-size: 15px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 15px;
         }
     }
 
 
 
     h1 {
-        line-height: 1.2;
+        
         font-weight: 200;
-        font-size: 30px;
+        font-size: 20px;
 
         @media (max-width: $breakpoint-tablet) {
             line-height: 1.5;
@@ -62,14 +66,19 @@
     .bm-burger-button {
         position: fixed;
         width: 36px;
-        height: 30px;
+        height: 36px;
         right: 36px;
         top: 36px;
       }
       
       /* Color/shape of burger icon bars */
       .bm-burger-bars {
-        background: $accent-color;
+        background: $text-color;
+      }
+
+      .bm-burger-bars.style {
+        height: 10%;
+
       }
       
       /* Color/shape of burger icon bars on hover*/
@@ -79,13 +88,14 @@
       
       /* Position and sizing of clickable cross button */
       .bm-cross-button {
-        height: 24px;
-        width: 24px;
+        height: 100px;
+        width: 100px;
       }
       
       /* Color/shape of close button cross */
       .bm-cross {
         background: #bdc3c7;
+        
       }
       
       /*
@@ -115,12 +125,29 @@
       .bm-item-list {
         color: #b8b7ad;
         padding: 0.8em;
+
+        button {
+            padding:8px;
+            color: $text-color;
+            background-color: $base-color;
+            border: solid 1px $accent-color;
+            width: 70px;
+            border-radius: 10px;
+        }
       }
       
       /* Individual item */
       .bm-item {
         display: inline-block;
+        margin-top: 30px;
+
+     a {
+        text-decoration: none;
+        font-family: $montserrat;
+        font-weight: 200;
+        color: $text-color;
       }
+    }
       
       /* Styling of overlay */
       .bm-overlay {

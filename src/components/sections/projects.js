@@ -1,15 +1,18 @@
 import React from 'react'
 import Fade from 'react-reveal/Reveal';
 import newprojects from '../../config';
-import ZappLaptop from './zapp1.png';
-import CycleFlow from './cycleflow.png';
+import ZappLaptop from './desktop.svg';
+import CycleFlow from './tablet.svg';
 import {Folder} from '../../assets/icons';
 
 
 let technology = newprojects.techicons
 
 
-function projects() {
+function projects(windowSize) {
+
+        const window = Object.values(windowSize)
+        console.log(window)
 
     const techIcon= (tech) => {
         for (let i in technology) {
@@ -28,11 +31,14 @@ function projects() {
                     <img alt='laptop' src={ZappLaptop}/>
                 </div>
                 <div className='project-description-right'>
+                <div className='project-description-feature'>
                 <h2>featured project</h2>
                 <h1>Zapp</h1>
+                </div>
                 <p>Zapp is an app for managing issues in the software development lifecycle. Zapp is designed with small teams in mind and aims to make issue tracking simple and straightforward.</p>
                 </div>
             </div>
+            { window > 1117 ? (
             <div className='project-profile'>
                 <div className='project-description-left'>
                 <h2>featured project</h2>
@@ -42,7 +48,20 @@ function projects() {
                 <div className='project-image'>
                     <img alt='laptop' src={CycleFlow}/>
                 </div>
+            </div> ) : (
+                <div className='project-profile'>
+                <div className='project-image'>
+                    <img alt='laptop' src={CycleFlow}/>
+                </div>
+                <div className='project-description-right'>
+                <div className='project-description-feature'>
+                <h2>featured project</h2>
+                <h1>Zapp</h1>
+                </div>
+                <p>Zapp is an app for managing issues in the software development lifecycle. Zapp is designed with small teams in mind and aims to make issue tracking simple and straightforward.</p>
+                </div>
             </div>
+            )}
       
         <div className='projects-section'>
         <Fade delay={2000} cascade bottom>
@@ -60,7 +79,7 @@ function projects() {
             <p>{project.description}</p>
             <div className='technology-icons'>
             {project.techStack.map((tech,index) => 
-                <img alt='icons' style={{height:'45px', width:'45px'}}src={techIcon(tech)}/>)}
+                <img alt='icons' style={{height:'35px', width:'35px'}}src={techIcon(tech)}/>)}
                 </div>
             </div> 
             </div>
