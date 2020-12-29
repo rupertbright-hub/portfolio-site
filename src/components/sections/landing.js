@@ -5,7 +5,6 @@ import {Arrow} from '../../assets/icons';
 import Header from '../header/header';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { slide as Menu } from 'react-burger-menu'
-// import Headroom from 'react-headroom'
 
 
 function Landing(windowSize) {
@@ -15,8 +14,7 @@ function Landing(windowSize) {
 
     return (
         <div className='container'>
- 
-        {window > 1000 || window === undefined ? (<Header/>) : ( 
+        {window > 1000 || window[0] === undefined ? (<Header/>) : ( 
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>

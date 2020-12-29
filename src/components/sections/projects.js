@@ -12,7 +12,7 @@ let technology = newprojects.techicons
 function projects(windowSize) {
 
         const window = Object.values(windowSize)
-        console.log(window)
+
 
     const techIcon= (tech) => {
         for (let i in technology) {
@@ -38,7 +38,7 @@ function projects(windowSize) {
                 <p>Zapp is an app for managing issues in the software development lifecycle. Zapp is designed with small teams in mind and aims to make issue tracking simple and straightforward.</p>
                 </div>
             </div>
-            { window > 1117 ? (
+            { window > 1117 || window[0] === undefined ? (
             <div className='project-profile'>
                 <div className='project-description-left'>
                 <h2>featured project</h2>
