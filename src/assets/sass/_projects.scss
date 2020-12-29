@@ -102,7 +102,16 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
     color:$base-color;
     font-family: $graf;
     text-align: center;
-    font-size: 15px;
+    font-size: 90px;
+
+    @media (max-width: $breakpoint-tablet) {
+        font-size: 60px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+    font-size: 40px;
+    margin-top: 70px;
+}
 }
 
 .project-profile {
@@ -138,16 +147,24 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
         }
 
         @media (max-width: 680px) {
-            height:220px;
+            height:300px;
+        }
+
+        @media (max-width: 540px) {
+            height:230px;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            height:200px;
         }
     }
 }
 
     .project-description-right {
         padding: 100px 0;
-        
         position: absolute;
         right: 300px;
+        width:500px;
 
         @media (max-width: 1700px) {
             position: static ;
@@ -156,8 +173,10 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
             margin-right: auto;
             margin-left: auto;
             padding: 20px 0;
-    
-     
+        }
+
+        @media (max-width: 590px) {
+            width: 80%;
         }
 
         .project-description-feature {
@@ -173,11 +192,14 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
         color: $base-color;
         padding: 10px;
 
-        @media (max-width: 1112px) {
+        @media (max-width: 1117px) {
             padding:0px;
             font-size: 40px;
             text-align: left;
-          
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 30px
         }
     }
 
@@ -186,11 +208,14 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
         text-align: right;
         font-size: 20px;
 
-        @media (max-width: 1112px) {
+        @media (max-width: 1117px) {
             font-size: 20px;
             margin-top:auto;
             text-align: left;
-          
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 15px
         }
     }
 
@@ -207,15 +232,16 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
             @media (max-width: 1700px) {
                 font-size: medium;
             }
-            @media (max-width: 1112px) {
+            @media (max-width: 1117px) {
                 margin-top:10px;
+                text-align: left;
             }
         }
     }
 
     .project-description-left {
         padding: 100px 0;
-       
+        width:500px;
         position: absolute;
         left:400px;
 

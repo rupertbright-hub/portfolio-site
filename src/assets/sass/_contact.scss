@@ -1,25 +1,43 @@
 .contact-container {
-    padding: 100px 150px;
+    padding: 150px 50px;
     text-align: center;
     background-color: $base-color;
     clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $breakpoint-desktop) {
+        clip-path: none;
+    }
+
+    div {
+        width: 50%;
+
+        @media (max-width: $breakpoint-desktop) {
+            width: 70%;
+        }
+    }
+
 
     h1 {
         padding-top: 150px;
-        font-size: 15px;
+        font-size: 50px;
+
+        @media (max-width: $breakpoint-desktop) {
+            font-size: 40px;
+        }
     }
 
     p {
-        width:50%;
-        margin:auto;
         margin-top: 50px;
         line-height: 1.6;
         color: $text-color;
+        font-size: 18px
     }
 
     button {
         margin-top: 50px;
-        padding:20px;
+        padding:15px;
         border-radius: 5px;
         background-color: $base-color;
         color: rgb(191, 0, 255);
@@ -28,13 +46,9 @@
         border-width: 1px;
         font-size: 20px;
     }
+
+    .signature {
+        font-size: 15px;
+    }
 }
 
-.signature {
-    margin-top: 100px;
-
-p {
-    font-size: 15px;
-    color: white;
-}
-}

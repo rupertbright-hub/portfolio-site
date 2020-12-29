@@ -10,8 +10,8 @@ function Nav_links() {
   <Fade cascade top>
         <div className='navlinks-container'>
             <div><AnchorLink href='#about'><span>01.</span> About</AnchorLink></div>
-            <div><AnchorLink href='#projects'><span>03.</span> Projects</AnchorLink></div>
-            <div><AnchorLink href='#contact'><span>02.</span> Contact</AnchorLink></div>
+            <div><AnchorLink href='#projects'><span>02.</span> Projects</AnchorLink></div>
+            <div><AnchorLink href='#contact'><span>03.</span> Contact</AnchorLink></div>
             <button>CV</button>
     </div>
     </Fade>

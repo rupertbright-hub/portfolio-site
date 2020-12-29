@@ -5,9 +5,9 @@ import Me from './rupert.jpg'
 function About() {
     return (
         <div className='about-container'>
-        <div id='about' className='about-section'>
-        <div className='heading'>
-        <h1 >01. About</h1>
+        <div id='about'  className='about-section'>
+        <div  className='heading'>
+        <h1   >About</h1>
         </div>
         <div className='about-description'>
             <div className='left-container'>

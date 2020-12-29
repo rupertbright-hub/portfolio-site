@@ -10,7 +10,6 @@ module.exports = {
         {
             name: 'Zapp',
             position: 'Frontend Engineer',
-            title:'Issue tracking application',
             description:'Zapp is an app for managing issues in the software development lifecycle. Zapp is designed with small teams in mind and aims to make issue tracking simple and straightforward.',
             techStack: [
                 'HTML',
@@ -18,14 +17,12 @@ module.exports = {
                 'Typescript',
                 'React',
                 'NodeJS',
-                'Express',
                 'PostgreSQL',
             ]
         },
         {
             name: 'CycleFlow',
             position: 'Fullstack Developer',
-            title:'Application that logs issues on cycling routes',
             description:'Cycling web app that allows users to log and flag issues on London cycle routes through the Twitter API.  Users can send issues to CycleFlow twitter account which is fetched and rendered onto the app dashboard.',
             techStack: [
                 'HTML',

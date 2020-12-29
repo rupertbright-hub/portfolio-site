@@ -5,14 +5,25 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
      background-color: $base-color;
      width: 100%;
+
+     @media (max-width: $breakpoint-mobile) {
+        -webkit-clip-path: none ;
+    clip-path: none;
+    }
 }
 
 
 .about-section {
-    padding-top:10px;
-    padding-bottom: 200px;
+    padding-top:100px;
+    padding-bottom: 300px;
     width:70%;
     margin:auto;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding-bottom: 100px;
+    }
+
+    
 
     h1 {
         color:$text-color;
@@ -63,6 +74,10 @@
         p{
             color:$text-color;
             font-size: large;
+
+            @media (max-width: $breakpoint-mobile) {
+                    font-size: 15px;
+        }
         }
     }
 
@@ -83,6 +98,13 @@
         .right-container img {
             margin-left: 0%;
             width: 60%;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            .right-container img {
+                margin-left: 0%;
+                width: 100%;
+            }
         }
 }
 @media (max-width: $breakpoint-desktop) {
