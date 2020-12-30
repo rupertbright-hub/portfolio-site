@@ -11,9 +11,9 @@ let technology = newprojects.techicons
 
 function projects(windowWidth) {
 
-    console.log(window)
 
-        const window = Object.values(windowWidth)
+const window = Object.values(windowWidth)
+console.log(window)
 
 
     const techIcon= (tech) => {

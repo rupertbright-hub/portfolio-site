@@ -6,13 +6,14 @@ import Header from '../header/header';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { slide as Menu } from 'react-burger-menu'
 
-function Landing(windowSize) {
-    const window = Object.values(windowSize)
+function Landing(windowWidth) {
+    const window = Object.values(windowWidth)
     console.log(window)
+    // console.log(windowWidth)
 
     return (
         <div className='container'>
-        {(window[0]) > 1000 ? (<Header/>) : ( 
+        {(window[0] || window[1]) > 1000 ? (<Header/>) : ( 
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>
