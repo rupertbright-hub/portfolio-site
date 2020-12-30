@@ -2,6 +2,7 @@ import React from 'react'
 import Me from './rupert.jpg'
 
 
+
 function About() {
     return (
         <div className='about-container'>
@@ -10,6 +11,7 @@ function About() {
         <h1   >About</h1>
         </div>
         <div className='about-description'>
+        <div>
             <div className='left-container'>
                 <p>Hello! I'm <span>Brittany</span>, a software engineer based in Boston, MA.<br/></p>
                 <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.<br/></p>
@@ -18,6 +20,7 @@ function About() {
             </div>
             <div className='right-container'>
                 <img alt='logo' src={Me}></img>
+                </div>
                 </div>
 
         </div>

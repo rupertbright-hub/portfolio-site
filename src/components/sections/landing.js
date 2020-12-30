@@ -7,14 +7,15 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { slide as Menu } from 'react-burger-menu'
 
 
+
 function Landing(windowSize) {
 
     const window = Object.values(windowSize)
-
+    var intFrameWidth = window.innerWidth;
 
     return (
         <div className='container'>
-        {window > 1000 || window[0] === undefined ? (<Header/>) : ( 
+        {(window[0] || intFrameWidth) > 1000 ? (<Header/>) : ( 
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>
