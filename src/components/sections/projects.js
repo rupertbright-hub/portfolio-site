@@ -8,13 +8,9 @@ import {Folder} from '../../assets/icons';
 
 let technology = newprojects.techicons
 
-
 function projects(windowWidth) {
-
-
 const window = Object.values(windowWidth)
 console.log(window)
-
 
     const techIcon= (tech) => {
         for (let i in technology) {
