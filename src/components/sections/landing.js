@@ -8,12 +8,12 @@ import { slide as Menu } from 'react-burger-menu'
 
 function Landing(windowWidth) {
     const window = Object.values(windowWidth)
-    console.log(window)
-    // console.log(windowWidth)
+    console.log('landing', window)
+
 
     return (
         <div className='container'>
-        {window[1] > 1000  ? (<Header/>) : ( 
+        {window[0] > 1000  ? (<Header/>) : ( 
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>
