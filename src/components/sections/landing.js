@@ -6,12 +6,11 @@ import Header from '../header/header';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { slide as Menu } from 'react-burger-menu'
 
-
+var intFrameWidth = window.innerWidth;
 
 function Landing(windowSize) {
 
     const window = Object.values(windowSize)
-    var intFrameWidth = window.innerWidth;
 
     return (
         <div className='container'>
