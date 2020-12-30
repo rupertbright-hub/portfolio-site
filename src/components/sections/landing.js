@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import Fade from 'react-reveal/Reveal';
 import {Arrow} from '../../assets/icons';
 // LinkedIn, GitHub, Instagram, Telegram, Line, 
@@ -6,15 +6,13 @@ import Header from '../header/header';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { slide as Menu } from 'react-burger-menu'
 
-var intFrameWidth = window.innerWidth;
-
 function Landing(windowSize) {
-
     const window = Object.values(windowSize)
+    console.log(window)
 
     return (
         <div className='container'>
-        {(window[0] || intFrameWidth) > 1000 ? (<Header/>) : ( 
+        {(window[0]) > 1000 ? (<Header/>) : ( 
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>

@@ -9,9 +9,11 @@ import {Folder} from '../../assets/icons';
 let technology = newprojects.techicons
 
 
-function projects(windowSize) {
+function projects(windowWidth) {
 
-        const window = Object.values(windowSize)
+    console.log(window)
+
+        const window = Object.values(windowWidth)
 
 
     const techIcon= (tech) => {
@@ -38,7 +40,7 @@ function projects(windowSize) {
                 <p>Zapp is an app for managing issues in the software development lifecycle. Zapp is designed with small teams in mind and aims to make issue tracking simple and straightforward.</p>
                 </div>
             </div>
-            { window > 1117 || window[0] === undefined ? (
+            { window[0] > 1117 ? (
             <div className='project-profile'>
                 <div className='project-description-left'>
                 <h2>featured project</h2>
