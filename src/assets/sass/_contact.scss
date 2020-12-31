@@ -5,16 +5,26 @@
     clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
     display: flex;
     justify-content: center;
+    width:100%;
 
     @media (max-width: $breakpoint-desktop) {
         clip-path: none;
     }
 
-    div {
+    .contact-description {
         width: 50%;
 
         @media (max-width: $breakpoint-desktop) {
             width: 70%;
+        }
+    }
+
+    .contact-icons {
+        margin-top: 30px;
+        
+
+        a {
+            margin:10px;
         }
     }
 

@@ -1,16 +1,10 @@
-module.exports = {
-
-    socialMedia: [
-        {
-            name:'LinkedIn',
-        },
-    ],
-
+const myfunction = {
     projects: [
         {
             name: 'Zapp',
             position: 'Frontend Engineer',
             description:'Zapp is an app for managing issues in the software development lifecycle. Zapp is designed with small teams in mind and aims to make issue tracking simple and straightforward.',
+            website: 'https://github.com/ilyadusoleil/zapp',
             techStack: [
                 'HTML',
                 'TailwindCSS',
@@ -24,6 +18,7 @@ module.exports = {
             name: 'CycleFlow',
             position: 'Fullstack Developer',
             description:'Cycling web app that allows users to log and flag issues on London cycle routes through the Twitter API.  Users can send issues to CycleFlow twitter account which is fetched and rendered onto the app dashboard.',
+            website: 'https://github.com/rupertbright-hub/CycleFlow',
             techStack: [
                 'HTML',
                 'CSS',
@@ -38,6 +33,7 @@ module.exports = {
             position: 'Frontend Engineer (Testing)',
             title:'NPM package that offers a fully customisable timeline for users to import into their projects.',
             description:'',
+            website: 'https://github.com/rupertbright-hub/React-Customizable-Timeline',
             techStack: [
                 'Jest',
                 'Mocha',
@@ -46,6 +42,7 @@ module.exports = {
         {
             name: 'Portfolio',
             description: 'Developer',
+            website: 'https://github.com/rupertbright-hub/portfolio-site',
             techStack: [
                 'Bootstrap',
                 'CSS',
@@ -77,3 +74,5 @@ module.exports = {
         },
     ],
 }
+
+export default myfunction

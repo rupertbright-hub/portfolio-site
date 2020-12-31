@@ -31,7 +31,13 @@
 
 @media (max-width: 1400px) {
     .transform {
-        width:50%;
+        width:500px;
+    }
+
+    @media (max-width: 1098px) {
+        .transform {
+            width:400px;
+        }
     }
 
     .projects-container {
@@ -124,9 +130,12 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
         display: block;
         margin-left: auto;
     margin-right: auto;
-    
     text-align: center;
     margin-top: 30px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding:0px;
     }
    
     
@@ -235,6 +244,12 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
             @media (max-width: 1117px) {
                 margin-top:10px;
                 text-align: left;
+            }
+
+            @media (max-width: $breakpoint-mobile) {
+                font-size: smaller;
+                padding: 10px;
+
             }
         }
     }

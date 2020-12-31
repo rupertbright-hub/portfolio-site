@@ -67,6 +67,7 @@ console.log('projects', window)
         <div className='projects-container'>
     {newprojects.projects.map((project, index) => {
         return (
+            <a style={{textDecoration:'none'}} href={project.website}>
             <div className='transform'>
             <div className='project-div'>
             <div className='githubicon'>
@@ -82,6 +83,7 @@ console.log('projects', window)
                 </div>
             </div> 
             </div>
+            </a>
             )})}
         </div>
         </Fade>

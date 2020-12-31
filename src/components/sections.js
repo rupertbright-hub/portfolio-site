@@ -8,6 +8,8 @@ function Sections() {
 const [windowWidth, setWindowWidth] = useState();
 const [windowSize, setWindowSize] = useState();
 
+
+
     useEffect(() => {
         window.addEventListener("resize", () => {
           setWindowSize(window.innerWidth);
