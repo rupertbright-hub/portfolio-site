@@ -30,6 +30,13 @@
     padding-bottom: 100px;
     width: 100%;
     margin: 0px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding-top: 20px;
   }
 }
 
@@ -115,7 +122,7 @@
 @media (max-width: 1400px) {
   .about-section .right-container img {
     margin-left: 0%;
-    width: 50%;
+    width: 450px;
   }
 }
 
@@ -316,6 +323,12 @@ span {
   margin-top: 100px;
 }
 
+@media (max-width: 910px) {
+  .projects-container {
+    padding: 25px;
+  }
+}
+
 .transform {
   width: 600px;
 }
@@ -332,18 +345,31 @@ span {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (max-width: 1098px) and (max-width: 910px) {
+  .transform {
+    width: 360px;
+  }
+}
+
+@media (max-width: 1400px) and (max-width: 1098px) and (max-width: 910px) and (max-width: 724px) {
+  .transform {
+    width: 100%;
+  }
+}
+
+.projects-container {
+  padding: 55px;
+}
+
+@media (max-width: 838px) {
   .projects-container {
-    padding: 40px;
+    padding: 2px;
   }
 }
 
 @media (max-width: 768px) {
-  .transform {
-    width: 100%;
-  }
   .projects-container {
-    padding: 10px;
+    padding: 2px;
   }
 }
 
@@ -356,6 +382,12 @@ span {
   border-top: 6px solid #1A202C;
   padding: 10px 20px;
   position: relative;
+}
+
+@media (max-width: 400px) {
+  .project-div {
+    height: 300px;
+  }
 }
 
 .project-div .githubicon {
@@ -453,7 +485,7 @@ span {
 
 @media (max-width: 680px) {
   .project-profile .project-image img {
-    height: 300px;
+    height: 275px;
   }
 }
 
@@ -702,10 +734,7 @@ span {
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #faf5ff;
-}
-
-.bm-burger-bars.style {
-  height: 10%;
+  height: 1px !important;
 }
 
 /* Color/shape of burger icon bars on hover*/

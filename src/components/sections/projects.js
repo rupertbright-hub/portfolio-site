@@ -67,8 +67,8 @@ console.log('projects', window)
         <div className='projects-container'>
     {newprojects.projects.map((project, index) => {
         return (
-            <a style={{textDecoration:'none'}} href={project.website}>
-            <div className='transform'>
+            <a className='transform' style={{textDecoration:'none'}} href={project.website}>
+            <div >
             <div className='project-div'>
             <div className='githubicon'>
             <h1>{project.name}</h1>

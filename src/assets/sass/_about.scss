@@ -23,6 +23,11 @@
         padding-bottom: 100px;
         width: 100%;
         margin: 0px;
+        padding-top:20px;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        padding-top:20px;
     }
 
     
@@ -115,7 +120,7 @@
     @media (max-width: $breakpoint-desktop) {
         .right-container img {
             margin-left: 0%;
-            width: 50%;
+            width: 450px;
         }
 
         @media (max-width: $breakpoint-mobile) {

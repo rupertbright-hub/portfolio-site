@@ -41,6 +41,8 @@ const myfunction = {
         },
         {
             name: 'Portfolio',
+            position: 'Frontend Engineer (Testing)',
+            title:'NPM package that offers a fully customisable timeline',
             description: 'Developer',
             website: 'https://github.com/rupertbright-hub/portfolio-site',
             techStack: [
