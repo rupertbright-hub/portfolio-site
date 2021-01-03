@@ -1,7 +1,8 @@
-// import { func } from 'prop-types';
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Fade from 'react-reveal/Reveal';
+import Cv from './rbcv.pdf'
+
 
 function Nav_links() {
 
@@ -12,7 +13,7 @@ function Nav_links() {
             <div><AnchorLink href='#about'><span>01.</span> About</AnchorLink></div>
             <div><AnchorLink href='#projects'><span>02.</span> Projects</AnchorLink></div>
             <div><AnchorLink href='#contact'><span>03.</span> Contact</AnchorLink></div>
-            <button>CV</button>
+            <button onClick={() => window.open(Cv)}>CV</button>
     </div>
     </Fade>
     </div>

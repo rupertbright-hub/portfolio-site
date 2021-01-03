@@ -81,7 +81,7 @@
         position:relative;
 
         @media (max-width: $breakpoint-mobile) {
-            height:300px;
+            padding: 3px 10px;
         }
 
 
@@ -90,6 +90,10 @@
         .githubicon {
             display:flex;
             width: 100%;
+
+            h1 {
+                font-size: 20px;
+            }
             
             div {
                 margin-left: auto;

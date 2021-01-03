@@ -24,8 +24,8 @@ function Landing(windowWidth) {
         <Fade delay={4000}>
         <div className='rbdescription'>
         <h1><span>Rupert Bright.</span></h1>
-        <h1>Frontend Engineer from London.</h1>
-        <h1>Based in</h1><h1><span> Switzerland.</span></h1>
+        <h1>From London based in Switzerland.</h1>
+        <h1><span> Software Developer.</span></h1>
         </div>
         </Fade>
         <div className='arrow-container'><AnchorLink href='#about'>
