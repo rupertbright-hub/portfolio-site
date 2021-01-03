@@ -13,10 +13,10 @@ function About() {
         <div className='about-description'>
       
             <div className='left-container'>
-                <p>Hello! I'm <span>Brittany</span>, a software engineer based in Boston, MA.<br/></p>
+                <p>Hello! I'm <span>Rupert</span>, a software developer from London but now based in Zurich, Switzerland.<br/></p>
                 <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.<br/></p>
-                <p>Shortly after graduating from Northeastern University, I joined the engineering team at Upstatement where I work on a wide variety of interesting and meaningful projects on a daily basis.<br/></p>
-                <p>Here are a few technologies I've been working with recently:<br/></p>
+                <p>Following a career in retail buying I began self learning code. After two years I decided to formalise my training at Europe’s toughest coding school <span>Codeworks.</span><br/></p>
+                <p>Below are a few projects that I created with other team members while on the course. <br/></p>
                 </div>
             <div className='right-container'>
                 <img alt='logo' src={Me}></img>

@@ -4,7 +4,6 @@
     background-color: #fff;
     
     h1 {
-        letter-spacing: 3px;
         color:$base-color;
         font-weight: 500;
         font-size: 30px;
@@ -72,7 +71,7 @@
         }
 
 .project-div {
-        height:350px;
+ 
         background-color: #F8F8F8;
         margin:9px;
         display:block;
@@ -281,7 +280,7 @@ box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
         padding: 100px 0;
         width:500px;
         position: absolute;
-        left:400px;
+        left:300px;
 
         @media (max-width: 1700px) {
             position: static ;

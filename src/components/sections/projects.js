@@ -10,7 +10,7 @@ let technology = newprojects.techicons
 
 function projects(windowSize) {
 const window = Object.values(windowSize)
-console.log('projects', window)
+// console.log('projects', window)
 
 
     const techIcon= (tech) => {
@@ -41,8 +41,11 @@ console.log('projects', window)
             <div className='project-profile'>
                 <div className='project-description-left'>
                 <h2>featured project</h2>
-                <h1>Zapp</h1>
-                <p>Zapp is an app for managing issues in the software development lifecycle. Zapp is designed with small teams in mind and aims to make issue tracking simple and straightforward.</p>
+                <h1>CycleFlow</h1>
+                <p>Cycling web app that allows users to log and flag issues on London
+cycle routes through the Twitter API. Users can send issues to
+CycleFlow twitter account which is fetched and rendered onto the
+app dashboard.</p>
                 </div>
                 <div className='project-image'>
                     <img alt='laptop' src={CycleFlow}/>
@@ -55,9 +58,12 @@ console.log('projects', window)
                 <div className='project-description-right'>
                 <div className='project-description-feature'>
                 <h2>featured project</h2>
-                <h1>Zapp</h1>
+                <h1>CycleFlow</h1>
                 </div>
-                <p>Zapp is an app for managing issues in the software development lifecycle. Zapp is designed with small teams in mind and aims to make issue tracking simple and straightforward.</p>
+                <p>Cycling web app that allows users to log and flag issues on London
+cycle routes through the Twitter API. Users can send issues to
+CycleFlow twitter account which is fetched and rendered onto the
+app dashboard.</p>
                 </div>
             </div>
             )}
@@ -77,10 +83,8 @@ console.log('projects', window)
             <p>{project.position}</p>
             <p>{project.title}</p>
             <p>{project.description}</p>
-            <div className='technology-icons'>
             {project.techStack.map((tech,index) => 
-                <img alt='icons' style={{height:'35px', width:'35px'}}src={techIcon(tech)}/>)}
-                </div>
+                <img alt='icons' style={{height:'30px', width:'30px', margin:'20px 0px 0px 10px'}}src={techIcon(tech)}/>)}
             </div> 
             </div>
             </a>

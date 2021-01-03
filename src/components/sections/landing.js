@@ -13,7 +13,7 @@ function Landing(windowWidth) {
 
     return (
         <div className='container'>
-        {window[0] > 1000 || window === 'und'  ? (<Header/>) : ( 
+        {window[0] > 1000 || window === 'undefined'  ? (<Header windowWidth ={windowWidth}/>) : ( 
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>

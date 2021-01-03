@@ -304,7 +304,6 @@ span {
 }
 
 .projects-section h1 {
-  letter-spacing: 3px;
   color: #1A202C;
   font-weight: 500;
   font-size: 30px;
@@ -374,7 +373,6 @@ span {
 }
 
 .project-div {
-  height: 350px;
   background-color: #F8F8F8;
   margin: 9px;
   display: block;
@@ -604,7 +602,7 @@ span {
   padding: 100px 0;
   width: 500px;
   position: absolute;
-  left: 400px;
+  left: 300px;
 }
 
 @media (max-width: 1700px) {
