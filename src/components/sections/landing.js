@@ -4,6 +4,7 @@ import {Arrow} from '../../assets/icons';
 import Header from '../header/header';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { slide as Menu } from 'react-burger-menu'
+import Cv from '../header/nav-links/rbcv.pdf'
 
 function Landing(windowWidth) {
     const window = Object.values(windowWidth)
@@ -18,7 +19,7 @@ function Landing(windowWidth) {
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>
             <div ><AnchorLink href='#contact'>Contact</AnchorLink></div>
-            <button >CV</button>
+            <button onClick={() => window.open(Cv)} >CV</button>
             </Menu>
         )}
         <Fade delay={4000}>

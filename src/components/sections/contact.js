@@ -8,7 +8,7 @@ function contact() {
         <div id='contact' className='contact-container'>
         <div className='contact-description'>
         <h1>Let's work together!</h1>
-        <p>Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+        <p>I am currently open to new oppurtunities. Whether you have a question or just want to say hi then feel free to get in touch via e-mail or on Linkedin.</p>
         <a href="mailto:rupert.bright@live.co.uk"><button>Get in Touch</button></a>
         <div className='contact-icons'>
             <a href='https://www.linkedin.com/in/rbrightb/'><LinkedIn/></a>

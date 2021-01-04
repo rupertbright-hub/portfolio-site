@@ -122,6 +122,8 @@
 .about-section .right-container img {
   width: 90%;
   margin-left: 10%;
+  border-radius: 10px;
+  border: 2px solid #78FDAB;
 }
 
 @media (max-width: 1400px) {
@@ -289,7 +291,6 @@
 
 .contact-container .signature {
   font-size: 15px;
-  color: #78FDAB;
 }
 
 .loading-container {
@@ -757,10 +758,6 @@ span {
 
 .arrow {
   margin-top: 10%;
-}
-
-.arrow :hover {
-  fill: #d6bcfa;
 }
 
 .bm-burger-button {
