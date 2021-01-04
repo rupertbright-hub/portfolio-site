@@ -40,7 +40,7 @@ const myfunction = {
         {
             name: 'Portfolio',
             position: 'Position: Developer',
-            description:'Simple portfolio website designed and built from the ground up. Utilsied clean UI principles and modilsed the build to ensure site can be easily as and when needed.',
+            description:'Simple portfolio website designed and built from the ground up. Utilised clean UI principles and modularised the build to ensure site can be easily updated in the future.',
             website: 'https://github.com/rupertbright-hub/portfolio-site',
             techStack: [
                 'Sass',
