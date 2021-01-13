@@ -24,7 +24,6 @@ const [windowSize, setWindowSize] = useState();
     return (
      
         <div className='layout-container'>  
-  
         <Landing windowWidth={windowWidth} windowSize={windowSize}/>
         <About/>
         <Projects windowWidth={windowWidth} windowSize={windowSize}/>

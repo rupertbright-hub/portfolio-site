@@ -16,12 +16,12 @@ function Header(window) {
     console.log(window.window[0])
 
 return (
-    <div>
-{window.window[0]> 1000 || window.window[0] === 'undefined'  ? (<Headroom><header className='header-container'>
+    <div >
+{window.window[0]> 1000 || window.window[0] === 'undefined'  ?  (<Headroom><header>
   <NavLinks/>
   </header>
   </Headroom>) : ( 
-    <header className='header-container'>
+    <header>
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>
