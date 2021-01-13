@@ -17,7 +17,7 @@ function Header(window) {
 
 return (
     <div>
-{window.window[0]> 1000 || window === 'undefined'  ? (<Headroom><header className='header-container'>
+{window.window[0]> 1000 || window.window[0] === 'undefined'  ? (<Headroom><header className='header-container'>
   <NavLinks/>
   </header>
   </Headroom>) : ( 
