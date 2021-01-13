@@ -27,7 +27,7 @@
 
 @media (max-width: 400px) {
   .about-section {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     width: 100%;
     margin: 0px;
     padding-top: 20px;
@@ -99,7 +99,8 @@
 
 @media (max-width: 1400px) {
   .about-section .left-container {
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -136,6 +137,7 @@
 @media (max-width: 1400px) and (max-width: 400px) {
   .about-section .right-container img {
     margin-left: 0%;
+    margin-top: 50px;
     width: 90%;
   }
 }
@@ -488,6 +490,9 @@ span {
   justify-content: center;
   margin-top: 100px;
   padding: 20px;
+  border-top: solid 2px #1A202C;
+  width: 50%;
+  margin: auto;
 }
 
 @media (max-width: 1117px) {
@@ -734,9 +739,8 @@ span {
 }
 
 .rbdescription h1 {
-  font-weight: 200;
-  font-size: 20px;
-  margin-top: 10px;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 @media (max-width: 768px) {
