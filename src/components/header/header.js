@@ -21,12 +21,14 @@ return (
   <NavLinks/>
   </header>
   </Headroom>) : ( 
+    <header className='header-container'>
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>
             <div ><AnchorLink href='#contact'>Contact</AnchorLink></div>
             <button onClick={() => window.open(Cv)} >CV</button>
             </Menu>
+            </header>
         )}
         </div>
 )
