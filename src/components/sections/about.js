@@ -1,5 +1,5 @@
 import React from 'react'
-import Me from './rupert.jpg'
+import Me from './rupert2.jpg'
 
 
 

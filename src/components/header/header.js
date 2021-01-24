@@ -8,12 +8,7 @@ import Cv from '../header/nav-links/rbcv.pdf'
 
 
 function Header(window) {
-
-    // const window = Object.values(windowWidth)
-    // console.log('landing', window)
-
-  
-    console.log(window.window[0])
+console.log(window.window[0])
 
 return (
     <div >

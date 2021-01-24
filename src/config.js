@@ -2,7 +2,7 @@ const myfunction = {
     projects: [
         {
             name: 'Zapp',
-            position: 'Frontend Engineer',
+            position: 'Position: Frontend Engineer',
             description:'Designed and built the frontend using ReactJS and CSS Tailwind. Implemented Typescript to ensure type safety.',
             website: 'https://github.com/ilyadusoleil/zapp',
             techStack: [

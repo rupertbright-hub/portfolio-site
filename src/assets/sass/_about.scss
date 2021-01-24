@@ -11,8 +11,6 @@
     clip-path: none;
     }
 }
-
-
 .about-section {
     padding-top:100px;
     padding-bottom: 300px;
@@ -74,27 +72,29 @@
 
 
     .about-description {
-        width:100%;
-        padding:5%;
         line-height: 1.6;
-        margin-bottom:10%;
+        margin-bottom:8%;
         display: flex;
-        margin: auto;
+        justify-content: center;
+        margin-top: 8%;
+        
 
         
 
             div {
                 @media (max-width: $breakpoint-mobile) {
                     margin: 10px;
-                    width: 95%;
+                    width: 100%;
                 }
             }
     }
 
     .left-container {
-        width: 90%;
+   
         margin-bottom: 40px;
         line-height: 1.9;
+        margin-right:50px;
+        width: 60%;
 
         @media (max-width: $breakpoint-desktop) {
             width:80%;
@@ -112,15 +112,19 @@
     }
 
     .right-container {
-        width:100%;
+
         margin-top: 20px;
-}
+    }
+
 
    .right-container img {
-        width:90%;
-        margin-left: 10%;
+    filter: brightness(1.2);
+
+
         border-radius: 10px;
         border: 2px solid $accent-color;
+    
+        
     }
 
     @media (max-width: $breakpoint-desktop) {
