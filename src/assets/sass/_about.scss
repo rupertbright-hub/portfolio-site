@@ -78,8 +78,8 @@
         
         div {
             @media (max-width: $breakpoint-mobile) {
-                margin: 10px;
                 width: 100%;
+    
                 }
             }
     }
@@ -103,6 +103,8 @@
 
             @media (max-width: $breakpoint-mobile) {
                     font-size: 15px;
+                    margin-left:5px;
+            
         }
         }
     }
