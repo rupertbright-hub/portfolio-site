@@ -1,5 +1,4 @@
 import React  from 'react'
-import Fade from 'react-reveal/Reveal';
 import {Arrow} from '../../assets/icons';
 import Header from '../header/header';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
