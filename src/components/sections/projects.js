@@ -5,15 +5,15 @@ import ZappLaptop from './desktop.svg';
 import CycleFlow from './tablet.svg';
 import WePractice2 from './WePractice2.png';
 import Cactous from './cactous.png';
-import {Folder} from '../../assets/icons';
+
+import {World, Folder} from '../../assets/icons';
 
 
-let technology = newprojects.techicons
 
-function projects(windowSize) {
-const window = Object.values(windowSize)
-// console.log('projects', window)
 
+function projects() {
+
+    let technology = newprojects.techicons
 
     const techIcon= (tech) => {
         for (let i in technology) {
@@ -36,7 +36,7 @@ const window = Object.values(windowSize)
                 <h2>featured project</h2>
                 <h1>WePractice</h1>
                 </div>
-                <p>WePractice is a website that connects therapists to those seeking professional mental healthcare support. Users can search for therapists and book appointments, while Therapists can amend their profiles to ensure they website is showing the latest information.</p>
+                <p>WePractice is a website that connects therapists to those seeking professional mental healthcare support. Users can search for therapists and book appointments, while Therapists can amend their profiles to ensure the website is showing the latest information for potential new clients.</p>
                 </div>
             </div>
             <div className='project-profile'>
@@ -87,12 +87,12 @@ app dashboard.</p>
         <div className='projects-container'>
     {newprojects.projects.map((project, index) => {
         return (
-            <a className='transform' style={{textDecoration:'none'}} href={project.website}>
+            <a className='transform' style={{textDecoration:'none'}} href={project.website} target="_blank" rel="noopener noreferrer">
             <div >
             <div className='project-div'>
             <div className='githubicon'>
             <h1>{project.name}</h1>
-            <div><Folder/></div>
+            <div>{index < 3 ? <World/> : <Folder/>}</div>
             </div>
             <p>{project.position}</p>
             <p>{project.title}</p>

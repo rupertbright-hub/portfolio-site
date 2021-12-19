@@ -3,13 +3,12 @@ const myfunction = {
         {
             name: 'WePractice',
             position: 'Position: Frontend Engineer',
-            description:'A website that directly links therapists to those seeking mental healthcare advice ',
+            description:'A website that directly links therapists to those seeking mental healthcare advice.',
             website: 'https://wepractice.ch/',
             techStack: [
+                'React',
                 'Typescript',
-                'NextJS',
                 'Firebase',
-                'React'
             ]
         },
         {
@@ -19,18 +18,19 @@ const myfunction = {
             website: 'https://github.com/rupertbright-hub/portfolio-site',
             techStack: [
                 'React',
-                'Gatsby',
+                    'Typescript',
+                    'Firebase',
             ]
         },
         {
             name: 'Cactous',
             position: 'Position: Frontend Engineer',
-            description:'An application designed to help buyers determine their mortgage affordabilty with an intergrated data transfer to Migros Bank',
-            website: 'https://www.cactous.ch/',
+            description:'An application designed to help buyers determine their mortgage affordabilty with an intergrated data transfer to Migros Bank.',
+            website: 'https://app.cactous.ch/immobilievorhanden',
             techStack: [
-                'Typescript',
-                'NextJS',
-                'Firebase'
+                'React',
+                    'Typescript',
+                    'Firebase',
             ]
         },
         {
@@ -92,26 +92,11 @@ const myfunction = {
         Jest: 'https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg',
         Mocha: 'https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg',
         Firebase: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
-        NextJS: 'https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original-wordmark.svg'
+        NextJS: 'https://worldvectorlogo.com/logo/next-js.svg'
         },
     ],
 
-    featured_projects: [
 
-            {
-                type: 'Featured Project',
-                name: 'Zapp',
-                position: 'Position: Frontend Developer',
-                description:'A website that directly links therapists to those seeking mental healthcare advice ',
-                website: 'https://wepractice.ch/',
-                techStack: [
-                    'Typescript',
-                    'NextJS',
-                    'Firebase',
-                    'React'
-                ]
-            },
-        ]
   
 
 

@@ -4,12 +4,10 @@ import NavLinks from './nav-links/nav_links'
 import Headroom from 'react-headroom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { slide as Menu } from 'react-burger-menu'
-import Cv from '../header/nav-links/rbcv.pdf'
+import CV from '../header/nav-links/rbcv.pdf'
 
 
 function Header(window) {
-console.log(window.window[0])
-
 return (
     <div >
     <div className='desktopHeader'>
@@ -24,7 +22,7 @@ return (
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>
             <div ><AnchorLink href='#contact'>Contact</AnchorLink></div>
-            <button onClick={() => window.open(Cv)} >CV</button>
+            <button onClick={() => window.open(CV)} >CV</button>
             </Menu>
             </header>
             </div>

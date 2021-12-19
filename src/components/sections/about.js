@@ -1,5 +1,5 @@
 import React from 'react'
-import Me from './rupert2.jpg'
+import Me from './rupert3.jpg'
 
 
 
@@ -15,8 +15,7 @@ function About() {
             <div className='left-container'>
                 <p>Hello! I'm <span>Rupert</span>, a software developer from London but now based in Zurich, Switzerland.<br/></p>
                 <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.<br/></p>
-                <p>Following a career in retail buying I began self learning code. After two years I decided to formalise my training at Europe’s toughest coding school <span>Codeworks.</span><br/></p>
-                <p>Below are a few projects that I created with other team members while on the course. <br/></p>
+                <p>Below are a few projects that I have built and created in my current role at the VC firm <span> Sparrow Ventures</span> and some of my own personal projects. <br/></p>
                 </div>
             <div className='right-container'>
                 <img alt='logo' src={Me}></img>

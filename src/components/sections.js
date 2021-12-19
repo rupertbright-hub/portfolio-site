@@ -1,32 +1,16 @@
-import React, {useState, useEffect} from 'react'
-import window from 'global'
+import React from 'react'
+
 import { Contact, About, Landing, Projects} from './sections/index'
 
 
 function Sections() {
 
-const [windowWidth, setWindowWidth] = useState();
-const [windowSize, setWindowSize] = useState();
-
-
-    useEffect(() => {
-        window.addEventListener("resize", () => {
-          setWindowSize(window.innerWidth);
-        });
-      });
-
-
-      useEffect(() => {
-          setWindowWidth(window.innerWidth);
-        });
-
-
     return (
      
         <div className='layout-container'>  
-        <Landing windowWidth={windowWidth} windowSize={windowSize}/>
+        <Landing/>
         <About/>
-        <Projects windowWidth={windowWidth} windowSize={windowSize}/>
+        <Projects/>
         <Contact/> 
         </div>
         

@@ -4,15 +4,12 @@ import Header from '../header/header';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
-function Landing(windowWidth) {
-    const window = Object.values(windowWidth)
-    console.log('landing', window)
-    
+function Landing() {
 
 
     return (
         <div className='container'>
-        <Header window={window}/>
+        <Header />
         <div className='rbdescription'>
         <h1><span>Rupert Bright.</span></h1>
         <h1>From London, based in Switzerland.</h1>
@@ -21,7 +18,6 @@ function Landing(windowWidth) {
         <div className='arrow-container'><AnchorLink href='#about'>
         <Arrow className='arrow'/>
         </AnchorLink>
-        {/* <Projects windowSize={windowSize}/> */}
         </div>
         </div>
     )
