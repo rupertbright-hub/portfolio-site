@@ -1,321 +1,345 @@
-@import './_variables.scss';
+@import "./_variables.scss";
 
 .projects-section {
-    background-color: #fff;
-    
-    h1 {
-        color:$base-color;
-        font-weight: 500;
-        font-size: 30px;
-    }
+  background-color: #fff;
 
-    p {
-        font-size: large;
-    }
+  h1 {
+    color: $base-color;
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: large;
+  }
 }
 
 .projects-container {
-    flex-wrap:wrap;
-    display:flex;
-    justify-content:center;
-    padding:100px;
-    border-radius: 10px;
-    margin-top: 100px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  border-radius: 10px;
+  margin-top: 100px;
 
-    @media (max-width: 910px) {
-        padding:25px;
-    }
+  @media (max-width: 910px) {
+    padding: 25px;
+  }
 }
-    
 
 .transform {
-    width:600px;
+  width: 600px;
 }
 
 @media (max-width: 1400px) {
+  .transform {
+    width: 500px;
+  }
+
+  @media (max-width: 1098px) {
     .transform {
-        width:500px;
+      width: 400px;
     }
 
-    @media (max-width: 1098px) {
+    @media (max-width: 910px) {
+      .transform {
+        width: 360px;
+      }
+
+      @media (max-width: 724px) {
         .transform {
-            width:400px;
+          width: 100%;
         }
-
-        @media (max-width: 910px) {
-            .transform {
-                width:360px;
-            }
-
-            @media (max-width: 724px) {
-                .transform {
-                    width:100%;
-                }
-            }
+      }
     }
-    }
+  }
 }
 
-       
-    
-        .projects-container {
-            padding:55px;
-
-            @media (max-width: 838px) {
-                padding:2px;
-            }
-
-        @media (max-width: $breakpoint-tablet) {
-                padding:2px;
-            }
-        }
-
 .project-div {
- 
-        background-color: #F8F8F8;
-        margin:9px;
-        display:block;
-        color:$base-color;
-        border-top: 6px solid $base-color;
-        padding:10px 20px;
-        position:relative;
+  background-color: #f8f8f8;
+  margin: 9px;
+  display: block;
+  color: $base-color;
+  border-top: 6px solid $base-color;
+  padding: 10px 20px;
+  position: relative;
+  height: 240px;
 
-        @media (max-width: $breakpoint-mobile) {
-            padding: 3px 10px;
-        }
+  @media (max-width: $breakpoint-mobile) {
+    padding: 3px 10px;
+  }
 
+  .githubicon {
+    display: flex;
+    width: 100%;
 
+    h1 {
+      font-size: 20px;
+    }
 
+    div {
+      margin-left: auto;
+    }
+  }
 
-        .githubicon {
-            display:flex;
-            width: 100%;
+  p {
+    font-size: 16px;
+  }
 
-            h1 {
-                font-size: 20px;
-            }
-            
-            div {
-                margin-left: auto;
-            }
-        }
+  .technology-icons {
+    margin-top: 20px;
+    padding: 0px;
+    position: absolute;
+    bottom: 10px;
 
-   p {
-            font-size: 16px;
-        }
+    img {
+      margin-right: 10px;
+    }
+  }
 
-        .technology-icons{
-            margin-top:20px;
-            padding: 0px;
-            position: absolute;
-        bottom: 10px;
-
-        img {
-            margin-right:10px;
-           
-  
-        }
-        }
-
-        &:hover {
-            transform: translate(-4px,-4px);
-            cursor: pointer;
-            transition: 0.3s;
-            -webkit-box-shadow: 3px 2px 21px 0px rgba(44, 50, 50, 0.54);
--moz-box-shadow:    3px 2px 21px 0px rgba(44, 50, 50, 0.54);
-box-shadow:         3px 2px 21px 0px rgba(44, 50, 50, 0.54);
+  &:hover {
+    transform: translate(-4px, -4px);
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-box-shadow: 3px 2px 21px 0px rgba(44, 50, 50, 0.54);
+    -moz-box-shadow: 3px 2px 21px 0px rgba(44, 50, 50, 0.54);
+    box-shadow: 3px 2px 21px 0px rgba(44, 50, 50, 0.54);
     border-top: 6px solid $accent-color;
-        
-        }
+  }
 }
 
 .title {
-    color:$base-color;
-    font-family: $graf;
-    text-align: center;
-    font-size: 90px;
+  color: $base-color;
+  font-family: $graf;
+  text-align: center;
+  font-size: 90px;
 
-    @media (max-width: $breakpoint-tablet) {
-        font-size: 60px;
-}
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 60px;
+  }
 
-@media (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile) {
     font-size: 40px;
     margin-top: 70px;
-}
+  }
 }
 
 .project-profile {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    padding:20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 20px;
 
-    @media (max-width: 1117px) {
-        display: block;
-        margin-left: auto;
+  @media (max-width: 1117px) {
+    display: block;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-top: 30px;
-    }
+  }
 
-    @media (max-width: $breakpoint-mobile) {
-        padding:0px;
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0px;
+  }
 
-    }
-   
-    
-
-.project-image    {
-
+  .project-image {
     img {
-        height: 600px;
+      height: 600px;
 
-        @media (max-width: 1700px) {
-            height:500px;
-        }
+      @media (max-width: 1700px) {
+        height: 500px;
+      }
 
-        @media (max-width: 1117px) {
-            height: 420px;
-            margin-right: auto;
-            margin-left: auto;
-        }
+      @media (max-width: 1117px) {
+        height: 420px;
+        margin-right: auto;
+        margin-left: auto;
+      }
 
-        @media (max-width: 680px) {
-            height:275px;
-        }
+      @media (max-width: 680px) {
+        height: 275px;
+      }
 
-        @media (max-width: 540px) {
-            height:230px;
-        }
+      @media (max-width: 540px) {
+        height: 230px;
+      }
 
-        @media (max-width: $breakpoint-mobile) {
-            height:200px;
-        }
+      @media (max-width: $breakpoint-mobile) {
+        height: 200px;
+      }
     }
-}
+  }
 
-    .project-description-right {
-        padding: 100px 0;
-        position: absolute;
-        right: 300px;
-        width:500px;
+  .project-image-large {
+    img {
+      height: 600px;
+      margin-left: -300px;
 
-        @media (max-width: 1700px) {
-            position: static ;
-        }
-        @media (max-width: 1117px) {
-            margin-right: auto;
-            margin-left: auto;
-            padding: 20px 0;
-        }
+      @media (max-width: 1700px) {
+        height: 500px;
+        margin-left: 0px;
+      }
 
-        @media (max-width: 590px) {
-            width: 80%;
-        }
+      @media (max-width: 1117px) {
+        height: 420px;
+        margin-right: auto;
+        margin-left: auto;
+      }
 
-        .project-description-feature {
-            @media (max-width: 1117px) {
-             
-            }
+      @media (max-width: 680px) {
+        height: 275px;
+      }
 
-        }
+      @media (max-width: 540px) {
+        height: 230px;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+        height: 200px;
+      }
+    }
+  }
+
+  .project-description-right {
+    padding: 100px 0;
+    position: absolute;
+    right: 300px;
+    width: 500px;
+
+    @media (max-width: 1700px) {
+      position: static;
+    }
+    @media (max-width: 1117px) {
+      margin-right: auto;
+      margin-left: auto;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 590px) {
+      width: 80%;
+    }
+
+    .project-description-feature {
+      @media (max-width: 1117px) {
+      }
+    }
 
     h1 {
-        height: 50px;
-        text-align: right;
-        color: $base-color;
-        padding: 10px;
+      height: 50px;
+      text-align: right;
+      color: $base-color;
+      padding: 10px;
+      //   font-size: 40px;
 
-        @media (max-width: 1117px) {
-            padding:0px;
-            font-size: 40px;
-            text-align: left;
-        }
+      @media (max-width: 1117px) {
+        padding: 0px;
+        font-size: 40px;
+        text-align: left;
+      }
 
-        @media (max-width: $breakpoint-mobile) {
-            font-size: 30px
-        }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 30px;
+      }
     }
 
     h2 {
-        color: $accent-color;
-        text-align: right;
+      color: $accent-color;
+      text-align: right;
+      font-size: 20px;
+
+      @media (max-width: 1117px) {
         font-size: 20px;
+        margin-top: auto;
+        text-align: left;
+      }
 
-        @media (max-width: 1117px) {
-            font-size: 20px;
-            margin-top:auto;
-            text-align: left;
-        }
-
-        @media (max-width: $breakpoint-mobile) {
-            font-size: 15px
-        }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 15px;
+      }
     }
 
-        p {
-            background-color: rgb(26, 32, 44);
-            color: $text-color;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: right;
-            margin-top:50px;
-            font-size: large;
-            line-height: 1.6;
+    p {
+      background-color: rgb(26, 32, 44);
+      color: $text-color;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: right;
+      margin-top: 50px;
+      font-size: large;
+      line-height: 1.6;
 
-            @media (max-width: 1700px) {
-                font-size: medium;
-            }
-            @media (max-width: 1117px) {
-                margin-top:10px;
-                text-align: left;
-            }
+      @media (max-width: 1700px) {
+        font-size: medium;
+      }
+      @media (max-width: 1117px) {
+        margin-top: 10px;
+        text-align: left;
+      }
 
-            @media (max-width: $breakpoint-mobile) {
-                font-size: smaller;
-                padding: 10px;
+      @media (max-width: $breakpoint-mobile) {
+        font-size: smaller;
+        padding: 10px;
+      }
+    }
+  }
 
-            }
-        }
+  .project-description-left {
+    padding: 100px 0;
+    width: 500px;
+    position: absolute;
+    left: 300px;
+
+    @media (max-width: 1700px) {
+      position: static;
+    }
+    @media (max-width: 1117px) {
+      margin-right: auto;
+      margin-left: auto;
+      padding: 20px 0;
     }
 
-    .project-description-left {
-        padding: 100px 0;
-        width:500px;
-        position: absolute;
-        left:300px;
-
-        @media (max-width: 1700px) {
-            position: static ;
-        }
+    @media (max-width: 590px) {
+      width: 80%;
+    }
 
     h1 {
-        height: 50px;
+      height: 50px;
+      text-align: left;
+      color: $base-color;
+      padding: 10px;
+
+      @media (max-width: 1117px) {
+        padding: 0px;
+        font-size: 40px;
         text-align: left;
-        color: $base-color;
-        padding: 10px;
+      }
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 30px;
+      }
     }
     h2 {
-        color: $accent-color;
-        text-align: left;
-        font-size: 20px;
+      color: $accent-color;
+      text-align: left;
+      font-size: 20px;
     }
-        p {
-            background-color: rgb(26, 32, 44);
-            color: $text-color;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: left;
-            margin-top:50px;
-            font-size: large;
-            line-height: 1.6;
+    p {
+      background-color: rgb(26, 32, 44);
+      color: $text-color;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+      margin-top: 50px;
+      font-size: large;
+      line-height: 1.6;
 
-            @media (max-width: 1700px) {
-                font-size: medium;
-            }
-            
-        }
+      @media (max-width: 1700px) {
+        font-size: medium;
+      }
+      @media (max-width: 1117px) {
+        margin-top: 10px;
+        text-align: left;
+      }
     }
+  }
 }
-          

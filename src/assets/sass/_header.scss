@@ -1,30 +1,35 @@
-@import './_variables.scss';
-
+@import "./_variables.scss";
 
 .header-container {
-    background-color: $base-color;
-    max-width:100%;
-    padding:0px 100px;
+  background-color: $base-color;
+  max-width: 100%;
+  padding: 0px 100px;
 }
 
 .headroom {
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+.desktopHeader {
+  @media (max-width: $breakpoint-tablet) {
+    display: none;
   }
-  .headroom--unfixed {
-    position: relative;
-    transform: translateY(0);
-  }
-  .headroom--scrolled {
-    transition: transform 200ms ease-in-out;
-  }
-  .headroom--unpinned {
-    position: fixed;
-    transform: translateY(-100%);
-  }
-  .headroom--pinned {
-    position: fixed;
-    transform: translateY(0%);
-  }
+}

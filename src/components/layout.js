@@ -6,19 +6,6 @@ import PropTypes from "prop-types"
 import "../../src/assets/sass/layout.scss"
 
 const Layout = ({ children}) => {
-
-//   const [loading, setLoading ] = useState(true);
-
-
-//   console.log(loading)
-
-//     useEffect(() => {
-//         setTimeout(() => {
-//             setLoading(false)
-//         }, 3000);
-//     }, []);
-         
-
   return (
     <>
         <div >

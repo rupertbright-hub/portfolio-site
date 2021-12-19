@@ -1,6 +1,39 @@
 const myfunction = {
     projects: [
         {
+            name: 'WePractice',
+            position: 'Position: Frontend Engineer',
+            description:'A website that directly links therapists to those seeking mental healthcare advice ',
+            website: 'https://wepractice.ch/',
+            techStack: [
+                'Typescript',
+                'NextJS',
+                'Firebase',
+                'React'
+            ]
+        },
+        {
+            name: 'WePractice Admin Tool',
+            position: 'Position: Frontend Engineer',
+            description:'Simple admin tool for therapists to be able to update their profile details and manage client bookings.',
+            website: 'https://github.com/rupertbright-hub/portfolio-site',
+            techStack: [
+                'React',
+                'Gatsby',
+            ]
+        },
+        {
+            name: 'Cactous',
+            position: 'Position: Frontend Engineer',
+            description:'An application designed to help buyers determine their mortgage affordabilty with an intergrated data transfer to Migros Bank',
+            website: 'https://www.cactous.ch/',
+            techStack: [
+                'Typescript',
+                'NextJS',
+                'Firebase'
+            ]
+        },
+        {
             name: 'Zapp',
             position: 'Position: Frontend Engineer',
             description:'Designed and built the frontend using ReactJS and CSS Tailwind. Implemented Typescript to ensure type safety.',
@@ -37,16 +70,6 @@ const myfunction = {
                 'Mocha',
             ]
         },
-        {
-            name: 'Portfolio',
-            position: 'Position: Developer',
-            description:'Simple portfolio website designed and built from the ground up. Utilised clean UI principles and modularised the build to ensure site can be easily updated in the future.',
-            website: 'https://github.com/rupertbright-hub/portfolio-site',
-            techStack: [
-                'Sass',
-                'Gatsby',
-            ]
-        },
     ],
 
     techicons: [
@@ -68,8 +91,34 @@ const myfunction = {
         Postman: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
         Jest: 'https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg',
         Mocha: 'https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg',
+        Firebase: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+        NextJS: 'https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original-wordmark.svg'
         },
     ],
+
+    featured_projects: [
+
+            {
+                type: 'Featured Project',
+                name: 'Zapp',
+                position: 'Position: Frontend Developer',
+                description:'A website that directly links therapists to those seeking mental healthcare advice ',
+                website: 'https://wepractice.ch/',
+                techStack: [
+                    'Typescript',
+                    'NextJS',
+                    'Firebase',
+                    'React'
+                ]
+            },
+        ]
+  
+
+
 }
+
+
+
+
 
 export default myfunction

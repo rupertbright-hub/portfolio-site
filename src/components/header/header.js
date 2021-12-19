@@ -12,11 +12,14 @@ console.log(window.window[0])
 
 return (
     <div >
-{window.window[0]> 1000 || window.window[0] === 'undefined'  ?  (<Headroom><header>
+    <div className='desktopHeader'>
+<Headroom><header>
   <NavLinks/>
   </header>
-  </Headroom>) : ( 
-    <header>
+  </Headroom>
+  </div>
+  <div>
+    <header className='mobileHeader'>
         <Menu  right>
         <div ><AnchorLink href='#about'>About</AnchorLink></div>
             <div ><AnchorLink href='#projects'>Projects</AnchorLink></div>
@@ -24,7 +27,8 @@ return (
             <button onClick={() => window.open(Cv)} >CV</button>
             </Menu>
             </header>
-        )}
+            </div>
+       
         </div>
 )
   }
