@@ -4,7 +4,7 @@ import newprojects from '../../config';
 import ZappLaptop from './desktop.svg';
 import CycleFlow from './tablet.svg';
 import WePractice2 from './WePractice2.png';
-import Cactous from './Cactous.png';
+import Cactous from './cactous.png';
 import {Folder} from '../../assets/icons';
 
 
